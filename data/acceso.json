@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "owner": "",
-  "repo": "",
-  "branch": "",
-  "is_default": true,
-  "salt": "exkEo3demyU2chW++1ZvRQ==",
-  "iv": "Zc3p6jQJ1v1/5CPU",
-  "ct": "bhEnDJK2xEVy+ujYH3jAX7C1NEMKJ99xZrgkDzg=",
+  "owner": "yessicaaraceli101",
+  "repo": "em-distribuidora",
+  "branch": "main",
+  "is_default": false,
+  "salt": "r/fajo+5Hyi7bjZaxeaj1g==",
+  "iv": "Db4b/ISmlz0hGlrQ",
+  "ct": "S+DwPhJJmpEKgAezz4YQGyjEwwtP0RcIxt+vn7RpwR84PQvw07FvQSiLc30coF9aeuc4E9QKgVd9JWZ8fRQFNrgYzaeSxCbUp4S7FC93Qwakm6tab2djhmc5OEaSFQRTib4RJaHwYmMUsX2JO93S4mdqOoDP/ngYKi1fQ4f0v6OeksbPZukZRbWUOiPxK8efhq1A/LhBvbxIOiC6hoAXdPxbFZIofoJGrQLGHTk7tzAl4w==",
   "iterations": 310000
 }
