@@ -6,6 +6,59 @@
     "address": "",
     "logo": ""
   },
-  "brands": [],
-  "products": []
+  "brands": [
+    {
+      "id": "hygia",
+      "name": "Hygia",
+      "logo": "img/marcas/hygia.png"
+    }
+  ],
+  "products": [
+    {
+      "id": "hygia-detergente",
+      "name": "Detergente Concentrado",
+      "category": "Detergentes",
+      "brand": "Hygia",
+      "sku": "",
+      "code": "",
+      "price": 0,
+      "stock": 0,
+      "sizes": [],
+      "colors": "",
+      "description": "Aromas: Limón y Frutilla. Presentaciones: 1 L, 2 L y 5 L.",
+      "image": "img/productos/hygia-detergente-concentrado.jpg",
+      "installments": [],
+      "visible": true,
+      "created_at": 1792783418,
+      "updated_at": 1792783418,
+      "contenido": "",
+      "unidad": "Bidón",
+      "price_may": 0,
+      "min_may": 0,
+      "iva": 10
+    },
+    {
+      "id": "hygia-lavandina",
+      "name": "Agua Lavandina Máxima Desinfección",
+      "category": "Lavandinas",
+      "brand": "Hygia",
+      "sku": "",
+      "code": "",
+      "price": 0,
+      "stock": 0,
+      "sizes": [],
+      "colors": "",
+      "description": "Presentaciones: 1 L, 2 L y 5 L.",
+      "image": "img/productos/hygia-agua-lavandina.jpg",
+      "installments": [],
+      "visible": true,
+      "created_at": 1792783419,
+      "updated_at": 1792783419,
+      "contenido": "",
+      "unidad": "Bidón",
+      "price_may": 0,
+      "min_may": 0,
+      "iva": 10
+    }
+  ]
 }

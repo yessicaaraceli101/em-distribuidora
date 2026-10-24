@@ -305,6 +305,7 @@
   }
   function addLine(p, talle) {
     talle = String(talle);
+    if (!(+p.price > 0)) { flash('error', '«' + dispName(p) + '» todavía no tiene precio. Cargalo en Productos.'); return; }
     if (inCart(p.id, talle) + 1 > availFor(p, talle)) {
       flash('error', 'Sin stock' + (talle ? ' de la variante ' + talle : '') + ' de «' + dispName(p) + '». Cargalo en Compras.');
       focusQ();

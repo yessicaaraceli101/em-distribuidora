@@ -78,7 +78,7 @@
     var stock = Z.stockOf(p), price = +p.price || 0, b = p.brand ? Z.brandByName(brands, p.brand) : null;
     var h = '<article class="card"><div class="card-img">';
     h += p.image ? '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy">' : '<span class="noimg">' + Z.shoe(72) + '</span>';
-    if (stock <= 0) h += '<span class="ribbon">Agotado</span>';
+    if (stock <= 0 && price > 0) h += '<span class="ribbon">Agotado</span>';
     h += '</div><div class="card-body"><div class="badges">';
     if (p.category) h += '<span class="badge">' + esc(p.category) + '</span>';
     if (p.contenido) h += '<span class="badge badge-soft">' + esc(p.contenido) + '</span>';
@@ -91,9 +91,9 @@
     if (p.sku) meta.push('SKU: ' + esc(p.sku));
     if (p.code) meta.push('Cód.: ' + esc(p.code));
     if (meta.length) h += '<p class="card-meta">' + meta.join(' · ') + '</p>';
-    h += '<p class="price">' + money(price) + (p.unidad && p.unidad !== 'Unidad' ? ' <small class="per">por ' + esc(lower(p.unidad)) + '</small>' : '') + '</p>';
+    h += price <= 0 ? '<p class="price price-ask">Precio a consultar</p>' : '<p class="price">' + money(price) + (p.unidad && p.unidad !== 'Unidad' ? ' <small class="per">por ' + esc(lower(p.unidad)) + '</small>' : '') + '</p>';
     if (p.price_may && p.min_may) h += '<p class="may">Por mayor: <strong>' + money(p.price_may) + '</strong> desde ' + esc(p.min_may) + ' u.</p>';
-    h += '<p class="stock' + (stock <= 0 ? ' stock-out' : '') + '">' + (stock > 0 ? 'Stock: ' + stock : 'Sin stock por ahora') + '</p>';
+    if (price > 0) h += '<p class="stock' + (stock <= 0 ? ' stock-out' : '') + '">' + (stock > 0 ? 'Stock: ' + stock : 'Sin stock por ahora') + '</p>';
     if (p.colors) h += '<p class="colors">Colores: ' + esc(p.colors) + '</p>';
     if (p.description) h += '<p class="desc">' + esc(p.description) + '</p>';
     if (p.sizes && p.sizes.length) {
@@ -116,7 +116,7 @@
       h += '<option value="' + esc(c) + '">' + esc(c) + '</option></select></label>';
     }
     h += '<label class="qty-row"><span>Cantidad</span><input class="qty-want" type="number" min="1" value="1" inputmode="numeric" aria-label="Cantidad"></label>';
-    h += '<a class="btn btn-wa js-wa" href="#" data-name="' + esc(p.name + (p.contenido ? ' ' + p.contenido : '')) + '" data-sku="' + esc(p.sku || '') + '" data-price="' + esc(money(price)) + '">' +
+    h += '<a class="btn btn-wa js-wa" href="#" data-name="' + esc(p.name + (p.contenido ? ' ' + p.contenido : '')) + '" data-sku="' + esc(p.sku || '') + '" data-price="' + esc(price > 0 ? money(price) : 'a consultar') + '">' +
       Z.WA_ICON + ' Consultar por WhatsApp</a>';
     return h + '</div></article>';
   }

@@ -790,7 +790,7 @@
     S.data.products.forEach(function (p) { var k = lower(p.brand); if (k) counts[k] = (counts[k] || 0) + 1; });
     var h = '<section class="panel brand-new"><h2>Agregar marca</h2>' +
       '<form class="stack" data-brand-form="">' +
-      '<label class="fld"><span>Nombre</span><input name="name" required maxlength="60" placeholder="Ej: Vizzano"></label>' +
+      '<label class="fld"><span>Nombre</span><input name="name" required maxlength="60" placeholder="Ej: Hygia"></label>' +
       '<label class="fld"><span>Logo (cuadrado se ve mejor)</span><input type="file" name="logo" accept="image/jpeg,image/png,image/webp,image/gif"></label>' +
       '<div><button class="btn btn-accent" type="submit">Agregar marca</button></div></form></section>';
     S.data.brands.forEach(function (b) {

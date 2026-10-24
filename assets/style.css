@@ -598,3 +598,9 @@ kbd { font: 600 .72rem/1 var(--font-body); padding: 3px 6px; border-radius: 5px;
 .may { color: var(--accent); }
 .may-tag { background: var(--accent); }
 .tabs a.active { border-color: var(--accent); }
+.price-ask { font-size: 1.15rem; color: var(--accent); }
+/* Logos de marca completos (sin recortar) */
+.brand-tile { width: 96px; height: 96px; background: #fff; }
+.brand-tile img { object-fit: contain; padding: 4px; }
+.card-brand img { width: 32px; height: 32px; object-fit: contain; background: #fff; }
+@media (max-width: 560px) { .brand-tile { width: 80px; height: 80px; } }
