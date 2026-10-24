@@ -26,7 +26,7 @@
       "sku": "123456",
       "code": "",
       "price": 20000,
-      "stock": 5,
+      "stock": 4,
       "sizes": [],
       "colors": "",
       "description": "Aromas: Limón y Frutilla. Presentaciones: 1 L, 2 L y 5 L.",
@@ -35,7 +35,7 @@
       "iva": 0,
       "image": "img/productos/hygia-detergente-concentrado.jpg",
       "created_at": 1792783418,
-      "updated_at": 1792853135
+      "updated_at": 1792853235
     },
     {
       "id": "hygia-lavandina",
