@@ -49,7 +49,7 @@
       "sku": "12345",
       "code": "",
       "price": 20000,
-      "stock": 0,
+      "stock": 5,
       "sizes": [],
       "colors": "",
       "description": "Presentaciones: 1 L, 2 L y 5 L.",
@@ -58,7 +58,7 @@
       "iva": 0,
       "image": "img/productos/hygia-agua-lavandina.jpg",
       "created_at": 1792783419,
-      "updated_at": 1792853016
+      "updated_at": 1792853213
     }
   ]
 }
